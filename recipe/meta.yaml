@@ -1,4 +1,4 @@
-{% set version = "0.6.6" %}
+{% set version = "0.6.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rtables_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rtables/rtables_{{ version }}.tar.gz
-  sha256: f7892a1f932047e9e68161fbc2c4ee314db5213a71d4315b5cfd0d01aed47000
+  sha256: 4717298dabe4101c8c05a4dda335be08b13c5128a698f734236b31fdc7b61c74
 
 build:
   merge_build_host: true  # [win]
