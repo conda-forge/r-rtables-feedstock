@@ -1,4 +1,4 @@
-{% set version = "0.6.12" %}
+{% set version = "0.6.13" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rtables_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rtables/rtables_{{ version }}.tar.gz
-  sha256: f0efade897e6ed569b44c95736dc2610dfdc16fec4eeec9a5459bba596df44d5
+  sha256: c48d938cec89b492cb6bca72a94f5efd874121d67e8b586172e6216aff90b6c6
 
 build:
   number: 0
