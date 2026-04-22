@@ -1,4 +1,4 @@
-{% set version = "0.6.15" %}
+{% set version = "0.6.16" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rtables_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rtables/rtables_{{ version }}.tar.gz
-  sha256: db09144ee7db649b0b8e21aa02b3d0bb4d60c4866c3c23fc6ed1b455202d1680
+  sha256: 83d427fc0a40532ce28443a5204a72a8cf9d74fb6ec805f28d3b53ac75bd6a6e
 
 build:
   number: 0
@@ -45,8 +45,9 @@ test:
 about:
   home: https://github.com/insightsengineering/rtables, https://insightsengineering.github.io/rtables/
   license: Apache-2.0
-  summary: Reporting tables often have structure that goes beyond simple rectangular data. The 'rtables' package provides a framework for declaring complex multi-level tabulations and then applying them to data. This framework models both tabulation and the resulting tables as hierarchical, tree-like objects which support
-    sibling sub-tables, arbitrary splitting or grouping of data in row and column dimensions, cells containing multiple values, and the concept of contextual summary computations. A convenient pipe-able interface is provided for declaring table layouts and the corresponding computations, and then applying them to data.
+  summary: Reporting tables often have structure that goes beyond simple rectangular data. The 'rtables' package provides a framework for declaring complex multi-level tabulations and then applying them to data. This framework models both tabulation and the resulting tables as hierarchical, tree-like objects which 
+    support sibling sub-tables, arbitrary splitting or grouping of data in row and column dimensions, cells containing multiple values, and the concept of contextual summary computations. A convenient pipe-able interface is provided for declaring table layouts and the corresponding computations, and then applying them 
+    to data.
   license_family: APACHE
   license_file:
     - LICENSE
